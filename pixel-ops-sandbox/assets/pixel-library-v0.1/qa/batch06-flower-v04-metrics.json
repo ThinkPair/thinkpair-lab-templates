@@ -1,0 +1,26 @@
+{
+  "path": "source/batch06/pxl-fac-flower-base-alpha-01-v04.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "sha256": "FE3C2A48E6C75890AF3A4E81378A9D818E0684F36DEDC12865ADF73A5888198B",
+  "eight_by_eight_exact": true,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "opaque_colors": 30,
+  "rgba_colors": 31,
+  "transparent_rgb_nonzero": 0,
+  "bbox": [
+    336,
+    48,
+    1208,
+    976
+  ],
+  "web_sha256": "EFEF2DCA6069B0CB1E885FFF27F7B56AA355CFA67A3A30699BCDB319D8D4F9BE",
+  "video_sha256": "FE3C2A48E6C75890AF3A4E81378A9D818E0684F36DEDC12865ADF73A5888198B",
+  "contact_sheet_sha256": "5FF998B4C35726C0A060BB2B5412BBC4D76093AA188534078C46548C4F49E118",
+  "comparison_sheet_sha256": "9940CD067CC8CAE020D7AFA2FD2CF050A19119E7D32613D5239FED84BF493A8E"
+}

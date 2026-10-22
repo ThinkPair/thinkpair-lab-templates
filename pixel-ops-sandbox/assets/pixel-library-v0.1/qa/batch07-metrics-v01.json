@@ -1,0 +1,121 @@
+{
+  "imagegen_calls": 0,
+  "contact_sheet": "contact-sheets/contact-sheet-batch07-v01.png",
+  "contact_sheet_sha256": "9A78C24E7454BB8E1ECAC62946BA0CF71E350CEF4FD146CA517F2DBA0B44970B",
+  "assets": [
+    {
+      "asset_id": "PXL-FAC-MILKTEA-DOOR-OPEN-PATCH-01",
+      "source_base": "source/batch06/pxl-fac-milktea-base-alpha-01-v03.png",
+      "source_base_sha256": "ECE006DAFAC64A2D80149EAD0B34B607233745BFD8817F1902C85AD744B2A5F5",
+      "path": "source/batch07/pxl-fac-milktea-door-open-patch-01-v01.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "logical_size": [
+        192,
+        128
+      ],
+      "sha256": "FF77FD249AB276C9CC5309150FF63785DD90D4EE595273E329F355D1FDF9559A",
+      "web_size": [
+        768,
+        512
+      ],
+      "web_sha256": "93131EC22941C6F68D457B7151C7AE9340CE7EE430E90BE2DB8A23C83CA398B2",
+      "video_sha256": "FF77FD249AB276C9CC5309150FF63785DD90D4EE595273E329F355D1FDF9559A",
+      "eight_by_eight_exact": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_colors": 7,
+      "rgba_colors": 8,
+      "transparent_rgb_nonzero": 0,
+      "bbox": [
+        672,
+        616,
+        856,
+        936
+      ],
+      "connected_components": 1,
+      "preview_path": "assembly/batch07/preview-pxl-fac-milktea-door-open-patch-01-v01.png",
+      "preview_sha256": "116F870FDA3A8561F45D733860AA801EB7DC341BC351A93C5533F913651ECA13"
+    },
+    {
+      "asset_id": "PXL-FAC-M1-SHUTTER-CLOSED-PATCH-01",
+      "source_base": "source/batch02/pxl-shl-m1-empty-01-v05.png",
+      "source_base_sha256": "BA245EC4771AB6199FD1A523F7D216F5B9905F231C894A2B3B19C2FD447F0BDE",
+      "path": "source/batch07/pxl-fac-m1-shutter-closed-patch-01-v01.png",
+      "size": [
+        1112,
+        776
+      ],
+      "logical_size": [
+        139,
+        97
+      ],
+      "sha256": "120821F567D61EF935BA0C412C75C718F40ACE2B4573CB17704EE432D83DC2BF",
+      "web_size": [
+        1112,
+        776
+      ],
+      "web_sha256": "97CF74D7B8DD8ECE0FD296D4A294AC0F40F71AABC164C55DAC2D0BC07693FEBE",
+      "video_sha256": "120821F567D61EF935BA0C412C75C718F40ACE2B4573CB17704EE432D83DC2BF",
+      "eight_by_eight_exact": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_colors": 5,
+      "rgba_colors": 6,
+      "transparent_rgb_nonzero": 0,
+      "bbox": [
+        104,
+        280,
+        1008,
+        712
+      ],
+      "connected_components": 1,
+      "preview_path": "assembly/batch07/preview-pxl-fac-m1-shutter-closed-patch-01-v01.png",
+      "preview_sha256": "3EFB3407264301F6E7E6EE7269AAEC18D4A254CCBA6D4DFAE90474BABA1B5CD8"
+    },
+    {
+      "asset_id": "PXL-FAC-M2-CLOSED-COVER-PATCH-01",
+      "source_base": "source/batch02/pxl-shl-m2-empty-01-v05.png",
+      "source_base_sha256": "740CFD03585A6B52BA6FC202929204E4986BBD4D519E21E7D78BA87379348AA9",
+      "path": "source/batch07/pxl-fac-m2-closed-cover-patch-01-v01.png",
+      "size": [
+        1176,
+        688
+      ],
+      "logical_size": [
+        147,
+        86
+      ],
+      "sha256": "5C76E2A0E733073CFD37364025671A7A9753DED59973EC2AA3B7E97C59D7B105",
+      "web_size": [
+        1176,
+        688
+      ],
+      "web_sha256": "AC722DCFF63A318EC596E281D381AF935941531EAB6ED7C97B4431CFF8AC1710",
+      "video_sha256": "5C76E2A0E733073CFD37364025671A7A9753DED59973EC2AA3B7E97C59D7B105",
+      "eight_by_eight_exact": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_colors": 5,
+      "rgba_colors": 6,
+      "transparent_rgb_nonzero": 0,
+      "bbox": [
+        64,
+        160,
+        1112,
+        456
+      ],
+      "connected_components": 1,
+      "preview_path": "assembly/batch07/preview-pxl-fac-m2-closed-cover-patch-01-v01.png",
+      "preview_sha256": "57B881EEBF9A52E17BB084B53558DC9A35DAC78E80641DCA9345B6BE893630E2"
+    }
+  ]
+}

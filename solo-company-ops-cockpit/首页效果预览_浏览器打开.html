@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>一人公司商业运营专家驾驶舱｜v0.1.4 首页预览</title>
+  <style>
+    :root {
+      --bg: #f6f3ed;
+      --surface: #ffffff;
+      --surface-soft: #fbfaf7;
+      --ink: #2f3033;
+      --ink-soft: #686a6f;
+      --ink-faint: #93969b;
+      --line: #e5e0d7;
+      --blue: #456a86;
+      --blue-deep: #31546e;
+      --blue-soft: #edf3f7;
+      --orange: #d98762;
+      --orange-deep: #b95f3c;
+      --orange-soft: #fbefe9;
+      --green: #2e7d63;
+      --green-soft: #eaf4f0;
+      --yellow: #b7791f;
+      --yellow-soft: #fff6df;
+      --red: #c95050;
+      --shadow: 0 10px 34px rgba(53, 48, 39, .055);
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --nums: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      --font: "Microsoft YaHei UI", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, a { font: inherit; }
+    button { border: 0; }
+    a { color: inherit; text-decoration: none; }
+
+    .preview-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 6px 20px;
+      color: #665f55;
+      background: #eee8dd;
+      border-bottom: 1px solid #ded6ca;
+      font-size: 12px;
+      letter-spacing: .02em;
+    }
+
+    .shell {
+      width: min(1600px, 100%);
+      min-height: calc(100vh - 34px);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 222px minmax(0, 1fr);
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 28px 20px 24px;
+      border-right: 1px solid var(--line);
+      background: rgba(250, 248, 244, .92);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 8px;
+    }
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: var(--blue);
+      border-radius: 12px;
+      font-weight: 800;
+      letter-spacing: -.03em;
+    }
+    .brand strong { display: block; font-size: 14px; line-height: 1.35; }
+    .brand small { color: var(--ink-faint); font-size: 11px; }
+
+    .nav { display: grid; gap: 6px; }
+    .nav a {
+      min-height: 42px;
+      padding: 9px 12px;
+      border-radius: 10px;
+      color: var(--ink-soft);
+      font-size: 14px;
+      font-weight: 650;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav a::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border: 1.5px solid currentColor;
+      border-radius: 50%;
+    }
+    .nav a.active { color: var(--blue-deep); background: var(--blue-soft); }
+    .nav a.active::before { background: var(--blue); border-color: var(--blue); }
+    .sidebar-status {
+      margin-top: auto;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      color: var(--ink-soft);
+      font-size: 12px;
+    }
+    .status-line { display: flex; align-items: center; gap: 8px; }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px var(--green-soft); }
+
+    .workspace { min-width: 0; padding: 0 34px 54px; }
+    .topbar {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .title-block h1 { margin: 0; font-size: 20px; letter-spacing: -.02em; }
+    .title-block p { margin: 3px 0 0; color: var(--ink-soft); font-size: 13px; }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .btn {
+      min-height: 40px;
+      padding: 9px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      background: var(--surface);
+      font-weight: 700;
+      cursor: default;
+      box-shadow: 0 2px 8px rgba(44, 40, 34, .03);
+    }
+    .btn.primary { color: #fff; border-color: var(--blue); background: var(--blue); }
+    .btn.action { color: #fff; border-color: var(--orange); background: var(--orange); }
+    .btn.text { min-height: auto; padding: 0; border: 0; box-shadow: none; color: var(--blue); background: transparent; }
+
+    .content { padding-top: 28px; display: grid; gap: 22px; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .section-head h2 { margin: 0; font-size: 19px; letter-spacing: -.02em; }
+    .section-head p { margin: 3px 0 0; color: var(--ink-soft); font-size: 13px; }
+    .muted-link { color: var(--blue); font-size: 13px; font-weight: 700; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(300px, .72fr);
+      gap: 18px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+    .outcome-card { padding: 30px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--ink-soft);
+      font-size: 12px;
+      font-weight: 750;
+    }
+    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); }
+    .outcome-title { margin: 14px 0 8px; font-size: clamp(28px, 2.6vw, 42px); line-height: 1.18; letter-spacing: -.045em; }
+    .outcome-desc { max-width: 680px; margin: 0; color: var(--ink-soft); font-size: 14px; }
+    .answer-grid {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .answer {
+      min-height: 112px;
+      padding: 15px;
+      border-radius: 12px;
+      background: var(--surface-soft);
+      border: 1px solid #ece8e1;
+    }
+    .answer span { display: block; color: var(--ink-soft); font-size: 12px; font-weight: 650; }
+    .answer strong { display: block; margin-top: 7px; font-size: 17px; line-height: 1.4; }
+    .answer small { display: block; margin-top: 5px; color: var(--ink-faint); font-size: 12px; line-height: 1.45; }
+
+    .action-card {
+      padding: 26px;
+      color: #4b3429;
+      border-color: #efcbb9;
+      background: var(--orange-soft);
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .action-card .label { color: var(--orange-deep); font-size: 12px; font-weight: 800; }
+    .action-card h2 { margin: 14px 0 8px; font-size: 24px; line-height: 1.3; }
+    .action-card p { margin: 0; color: #735347; font-size: 13px; }
+    .action-card .btn { align-self: flex-start; margin-top: 24px; }
+
+    .target-card { overflow: hidden; }
+    .target-head {
+      padding: 21px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      border-bottom: 1px solid var(--line);
+      background: var(--surface-soft);
+    }
+    .target-head h2 { margin: 0; font-size: 18px; }
+    .target-head p { margin: 3px 0 0; color: var(--ink-soft); font-size: 12px; }
+    .demo-badge {
+      flex: none;
+      padding: 6px 10px;
+      color: var(--yellow);
+      background: var(--yellow-soft);
+      border: 1px solid #efdca9;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .target-body { padding: 22px 24px 24px; }
+    .target-metrics {
+      display: grid;
+      grid-template-columns: 1.18fr repeat(3, 1fr) .9fr;
+      gap: 10px;
+    }
+    .metric {
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid #ebe7df;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .metric span { color: var(--ink-soft); font-size: 12px; }
+    .metric strong {
+      display: block;
+      margin-top: 6px;
+      font-family: var(--nums);
+      font-size: clamp(19px, 1.55vw, 25px);
+      line-height: 1.25;
+      letter-spacing: -.05em;
+    }
+    .metric small { display: block; margin-top: 4px; color: var(--ink-faint); font-size: 11px; line-height: 1.35; }
+    .metric.main { border-color: #cddde8; background: var(--blue-soft); }
+    .metric.main strong { color: var(--blue-deep); }
+    .capacity-bar { height: 6px; margin-top: 10px; overflow: hidden; border-radius: 999px; background: #e9e5de; }
+    .capacity-bar i { display: block; width: 83%; height: 100%; border-radius: inherit; background: var(--yellow); }
+    .target-bottom {
+      margin-top: 14px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .target-action { display: flex; align-items: center; gap: 12px; }
+    .target-action b {
+      flex: none;
+      padding: 6px 9px;
+      border-radius: 8px;
+      color: var(--orange-deep);
+      background: var(--orange-soft);
+      font-size: 12px;
+    }
+    .target-action strong { font-size: 14px; }
+
+    .path-card { padding: 22px 24px 24px; }
+    .path {
+      margin-top: 19px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    .stage {
+      position: relative;
+      padding: 14px 12px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: var(--surface-soft);
+    }
+    .stage:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: -9px;
+      z-index: 2;
+      width: 9px;
+      border-top: 1px solid #cfc9bf;
+    }
+    .stage b { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; color: var(--blue); background: var(--blue-soft); font-family: var(--nums); font-size: 11px; }
+    .stage strong { display: block; margin-top: 10px; font-size: 13px; }
+    .stage small { display: block; margin-top: 3px; color: var(--ink-faint); font-size: 11px; }
+
+    .lower-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; }
+    .panel { padding: 22px 24px; }
+    .empty-state {
+      min-height: 154px;
+      margin-top: 18px;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--ink-soft);
+      border: 1px dashed #d7d1c7;
+      border-radius: 12px;
+      background: var(--surface-soft);
+    }
+    .empty-state strong { display: block; color: var(--ink); font-size: 15px; }
+    .empty-state small { display: block; max-width: 430px; margin-top: 5px; font-size: 12px; }
+
+    .check-list { margin-top: 14px; display: grid; gap: 6px; }
+    .check-row {
+      min-height: 48px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-radius: 10px;
+      background: var(--surface-soft);
+    }
+    .check-row strong { font-size: 13px; }
+    .check-row span { color: var(--ink-faint); font-size: 11px; }
+    .check-row em { color: var(--yellow); font-size: 11px; font-style: normal; font-weight: 750; }
+
+    .footer {
+      margin-top: 2px;
+      padding: 17px 2px 0;
+      border-top: 1px solid var(--line);
+      color: var(--ink-faint);
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      font-size: 11px;
+    }
+
+    @media (max-width: 1180px) {
+      .shell { grid-template-columns: 188px minmax(0, 1fr); }
+      .workspace { padding-inline: 24px; }
+      .target-metrics { grid-template-columns: repeat(3, 1fr); }
+      .metric.main { grid-column: span 2; }
+      .path { grid-template-columns: repeat(3, 1fr); }
+      .stage:nth-child(3)::after { display: none; }
+    }
+
+    @media (max-width: 900px) {
+      .shell { display: block; }
+      .sidebar { position: static; width: auto; height: auto; padding: 16px 20px; border-right: 0; border-bottom: 1px solid var(--line); gap: 15px; }
+      .brand small, .sidebar-status { display: none; }
+      .nav { display: flex; overflow-x: auto; }
+      .nav a { white-space: nowrap; }
+      .workspace { padding-inline: 18px; }
+      .topbar { align-items: flex-start; padding: 18px 0; }
+      .hero-grid, .lower-grid { grid-template-columns: 1fr; }
+      .action-card { min-height: 230px; }
+    }
+
+    @media (max-width: 680px) {
+      .preview-note { text-align: center; }
+      .topbar { display: grid; }
+      .top-actions { flex-wrap: wrap; }
+      .answer-grid, .target-metrics, .path { grid-template-columns: 1fr; }
+      .metric.main { grid-column: auto; }
+      .stage::after { display: none; }
+      .target-head, .target-bottom { align-items: flex-start; flex-direction: column; }
+      .outcome-card, .action-card, .target-body, .panel, .path-card { padding: 20px; }
+      .target-action { align-items: flex-start; }
+      .footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-note">空白母版效果预览 · 页面中的示意目标仅用于展示结构，不会进入经营数据</div>
+
+  <div class="shell">
+    <aside class="sidebar" aria-label="经营驾驶舱导航">
+      <div class="brand">
+        <div class="brand-mark">营</div>
+        <div><strong>一人公司<br>经营驾驶舱</strong><small>v0.1.4 review</small></div>
+      </div>
+      <nav class="nav">
+        <a class="active" href="#overview">经营总览</a>
+        <a href="#target">盈利目标</a>
+        <a href="#projects">项目推进</a>
+        <a href="#review">经营体检</a>
+      </nav>
+      <div class="sidebar-status">
+        <div class="status-line"><i class="status-dot"></i><strong>数据保存在本机</strong></div>
+        <div style="margin-top:6px">空白母版 · 尚无经营记录</div>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div class="title-block">
+          <h1>经营总览</h1>
+          <p>看清结果，找到问题，只推进最重要的一件事</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn">更新经营情况</button>
+          <button class="btn primary">创业算账</button>
+        </div>
+      </header>
+
+      <div class="content" id="overview">
+        <section class="hero-grid" aria-label="本期经营判断">
+          <article class="card outcome-card">
+            <span class="eyebrow">本期经营结果 · 尚未核账</span>
+            <h2 class="outcome-title">经营情况尚未算清</h2>
+            <p class="outcome-desc">完成第一次算账后，这里会直接告诉你真正赚了还是亏了、现金增加还是减少，以及交付资金够不够。</p>
+
+            <div class="answer-grid">
+              <div class="answer">
+                <span>现在赚不赚钱？</span>
+                <strong>等待核算</strong>
+                <small>没有用空白数据猜测结果</small>
+              </div>
+              <div class="answer">
+                <span>问题出在哪里？</span>
+                <strong>缺少首次算账</strong>
+                <small>收入、成本和现金还未建立基线</small>
+              </div>
+              <div class="answer">
+                <span>接下来先做什么？</span>
+                <strong>完成一次创业算账</strong>
+                <small>已经经营或准备开始都可以计算</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card action-card">
+            <div>
+              <span class="label">本周先做</span>
+              <h2>先把这门生意的账算清</h2>
+              <p>只需填写核心经营数据。算完后再设定利润目标，避免在错误的目标上忙碌。</p>
+            </div>
+            <button class="btn action">开始创业算账</button>
+          </article>
+        </section>
+
+        <section class="card target-card" id="target" aria-label="盈利目标示意">
+          <header class="target-head">
+            <div>
+              <h2>本月盈利目标</h2>
+              <p>算清保本线后，营业额、成交和交付会从目标利润自动倒推</p>
+            </div>
+            <span class="demo-badge">示意（非经营事实）</span>
+          </header>
+          <div class="target-body">
+            <div class="target-metrics">
+              <div class="metric main">
+                <span>盈利营业额目标</span>
+                <strong>¥20,000</strong>
+                <small>支付全部成本和自己的工资后仍有利润</small>
+              </div>
+              <div class="metric">
+                <span>最低实收目标</span>
+                <strong>¥16,500</strong>
+                <small>本月现金至少不减少</small>
+              </div>
+              <div class="metric">
+                <span>月成交目标</span>
+                <strong>9 单</strong>
+                <small>按平均每单实收倒推</small>
+              </div>
+              <div class="metric">
+                <span>交付目标</span>
+                <strong>10 个</strong>
+                <small>销售与交付分别计算</small>
+              </div>
+              <div class="metric">
+                <span>产能占用</span>
+                <strong>83%</strong>
+                <div class="capacity-bar" aria-label="示意产能占用 83%"><i></i></div>
+                <small>接近满负荷，需关注交付压力</small>
+              </div>
+            </div>
+            <div class="target-bottom">
+              <div class="target-action">
+                <b>本周先做</b>
+                <strong>确认成交漏斗数据，再倒推每天需要推进的客户数量</strong>
+              </div>
+              <button class="btn text">查看目标拆解 →</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="card path-card" aria-label="赚钱路径">
+          <div class="section-head">
+            <div><h2>一门生意怎样真正赚到钱</h2><p>不是只看成交，而是把从找到客户到复购的整条链路跑通</p></div>
+            <span class="muted-link">当前尚无经营数据</span>
+          </div>
+          <div class="path">
+            <div class="stage"><b>1</b><strong>找到对象</strong><small>明确为谁解决问题</small></div>
+            <div class="stage"><b>2</b><strong>真实回应</strong><small>对方愿意继续沟通</small></div>
+            <div class="stage"><b>3</b><strong>具体讨论</strong><small>开始谈实际工作</small></div>
+            <div class="stage"><b>4</b><strong>正式报价</strong><small>价格真正给到客户</small></div>
+            <div class="stage"><b>5</b><strong>实际到账</strong><small>钱已经进入账户</small></div>
+            <div class="stage"><b>6</b><strong>复购转介绍</strong><small>一次交付变成新生意</small></div>
+          </div>
+        </section>
+
+        <section class="lower-grid">
+          <article class="card panel" id="projects">
+            <div class="section-head">
+              <div><h2>正在推进的项目</h2><p>每个项目只保留一个明确的下一步</p></div>
+              <span class="muted-link">更新经营情况</span>
+            </div>
+            <div class="empty-state">
+              <div><strong>还没有真实项目</strong><small>只有在对方已经回应，并开始讨论具体工作后，才会出现在这里。</small></div>
+            </div>
+          </article>
+
+          <article class="card panel" id="review">
+            <div class="section-head">
+              <div><h2>经营体检</h2><p>五个方面，最终只找一个最大问题</p></div>
+            </div>
+            <div class="check-list">
+              <div class="check-row"><div><strong>客户与收入</strong><br><span>获客、成交、回款</span></div><em>待复盘</em></div>
+              <div class="check-row"><div><strong>成本与利润</strong><br><span>花出去的钱有没有回报</span></div><em>待复盘</em></div>
+              <div class="check-row"><div><strong>项目与交付</strong><br><span>事情是否按时完成</span></div><em>待复盘</em></div>
+              <div class="check-row"><div><strong>现金与风险</strong><br><span>能否安全活下去</span></div><em>待复盘</em></div>
+              <div class="check-row"><div><strong>复盘与增长</strong><br><span>有效方法能否重复</span></div><em>待复盘</em></div>
+            </div>
+          </article>
+        </section>
+
+        <footer class="footer">
+          <span>经营数据只保存在当前设备 · 最近更新时间：尚无记录</span>
+          <span>一人公司商业运营专家驾驶舱 v0.1.4 review</span>
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

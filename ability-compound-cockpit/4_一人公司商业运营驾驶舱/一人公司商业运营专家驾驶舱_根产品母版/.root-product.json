@@ -1,0 +1,11 @@
+{
+  "schema": "root-product.v1",
+  "product": "一人公司商业运营专家驾驶舱",
+  "version": "0.1.2",
+  "artifactRole": "canonical_blank_master",
+  "containsUserData": false,
+  "iterationTarget": true,
+  "copyBeforeUse": true,
+  "allowTestDataBackflow": false,
+  "effectiveFrom": "2026-07-12"
+}

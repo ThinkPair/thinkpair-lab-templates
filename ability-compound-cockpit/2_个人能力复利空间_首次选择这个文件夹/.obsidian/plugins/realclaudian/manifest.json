@@ -1,0 +1,10 @@
+{
+  "id": "realclaudian",
+  "name": "Aiclude｜能力教练",
+  "version": "2.0.21",
+  "minAppVersion": "1.7.2",
+  "description": "把当前能力空间作为工作目录，按能力教练内核追问、练习、证据复盘并在确认后写回。",
+  "author": "Yishen Tu",
+  "authorUrl": "https://github.com/YishenTu",
+  "isDesktopOnly": true
+}

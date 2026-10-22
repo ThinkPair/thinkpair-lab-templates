@@ -1,0 +1,8 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "business-cockpit"
+  ],
+  "baseFontSize": 16
+}

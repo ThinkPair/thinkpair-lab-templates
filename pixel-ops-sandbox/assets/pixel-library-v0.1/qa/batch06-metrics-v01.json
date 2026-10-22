@@ -1,0 +1,398 @@
+[
+  {
+    "path": "source/batch06/raw/pxl-fac-milktea-base-alpha-01-v01.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "0ECB0CC4B1D2D40B8612F99EB5096202B5944083643107B7913F8FCA1821D7F8",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 7389,
+    "opaque_colors": 216630,
+    "rgba_colors": 221284,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      305,
+      73,
+      1241,
+      952
+    ]
+  },
+  {
+    "path": "source/batch06/pxl-fac-milktea-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "BA33D2EFDE63982BF906AB1F9A4CADF697C5142FF0188C2519D5CFE406A78534",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 28,
+    "rgba_colors": 29,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      304,
+      72,
+      1240,
+      952
+    ]
+  },
+  {
+    "path": "web/batch06/pxl-fac-milktea-base-alpha-01-v02.webp",
+    "size": [
+      768,
+      512
+    ],
+    "sha256": "9C62E3E6CB2AED44739516C3498406F5B62C928886D60BFD7CF098B135C5A43C",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 28,
+    "rgba_colors": 29,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      152,
+      36,
+      620,
+      476
+    ]
+  },
+  {
+    "path": "video/batch06/pxl-fac-milktea-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "BA33D2EFDE63982BF906AB1F9A4CADF697C5142FF0188C2519D5CFE406A78534",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 28,
+    "rgba_colors": 29,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      304,
+      72,
+      1240,
+      952
+    ]
+  },
+  {
+    "path": "source/batch06/raw/pxl-fac-flower-base-alpha-01-v01.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "A62DA1D61D2C546A4F3521248B3F83CE9CDCC13B4A6A833833F388EAB867BC83",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 13490,
+    "opaque_colors": 191836,
+    "rgba_colors": 198963,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      267,
+      47,
+      1270,
+      978
+    ]
+  },
+  {
+    "path": "source/batch06/pxl-fac-flower-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "79649D81A6C76AFC2651382D6C5F52071DC01C50868E071B16183DBD74D771FD",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 25,
+    "rgba_colors": 26,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      264,
+      48,
+      1264,
+      976
+    ]
+  },
+  {
+    "path": "web/batch06/pxl-fac-flower-base-alpha-01-v02.webp",
+    "size": [
+      768,
+      512
+    ],
+    "sha256": "4CDCA5FE9030C62EB99C1CBEEC3B604F7E77110CD392FC01B172B02BA9642CBF",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 25,
+    "rgba_colors": 26,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      132,
+      24,
+      632,
+      488
+    ]
+  },
+  {
+    "path": "video/batch06/pxl-fac-flower-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "79649D81A6C76AFC2651382D6C5F52071DC01C50868E071B16183DBD74D771FD",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 25,
+    "rgba_colors": 26,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      264,
+      48,
+      1264,
+      976
+    ]
+  },
+  {
+    "path": "source/batch06/raw/pxl-fac-gym-base-alpha-01-v01.png",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "5F6D2A2250EF0154026B1F88F8C9FD49EB96205BFD98E507848CA81C51D0C4BE",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 6169,
+    "opaque_colors": 112715,
+    "rgba_colors": 114799,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      322,
+      89,
+      1349,
+      835
+    ]
+  },
+  {
+    "path": "source/batch06/pxl-fac-gym-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "2B30EA50239A76ECBB9CD15E2FFA55E503EA67E2078CD7A31250A5402771D0F0",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 28,
+    "rgba_colors": 29,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      296,
+      160,
+      1240,
+      848
+    ]
+  },
+  {
+    "path": "web/batch06/pxl-fac-gym-base-alpha-01-v02.webp",
+    "size": [
+      768,
+      512
+    ],
+    "sha256": "83652DA07C4918008179A469227C246AE4DC8F8F4D68728790ED1ADD58D849E6",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 28,
+    "rgba_colors": 29,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      148,
+      80,
+      620,
+      424
+    ]
+  },
+  {
+    "path": "video/batch06/pxl-fac-gym-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "2B30EA50239A76ECBB9CD15E2FFA55E503EA67E2078CD7A31250A5402771D0F0",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 28,
+    "rgba_colors": 29,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      296,
+      160,
+      1240,
+      848
+    ]
+  },
+  {
+    "path": "source/batch06/raw/pxl-fac-beauty-base-alpha-01-v01.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "6D99CA544AA372A1FE5DA34D06EA43DCA895492A658887F8C5E9D93D69D4C367",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 198823,
+    "rgba_colors": 202995,
+    "transparent_rgb_nonzero": 4596,
+    "bbox": [
+      305,
+      76,
+      1203,
+      948
+    ]
+  },
+  {
+    "path": "source/batch06/pxl-fac-beauty-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "979C24138B5DEEAE8BDB6B2B66B818F9FA26CA6E94B20C1C483F6841C5E5C1B5",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 22,
+    "rgba_colors": 23,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      304,
+      72,
+      1200,
+      944
+    ]
+  },
+  {
+    "path": "web/batch06/pxl-fac-beauty-base-alpha-01-v02.webp",
+    "size": [
+      768,
+      512
+    ],
+    "sha256": "929009A654CD08281898267C5451B8ACCF6F4D06DDE7454A17511BD4C3AC5D41",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 22,
+    "rgba_colors": 23,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      152,
+      36,
+      600,
+      472
+    ]
+  },
+  {
+    "path": "video/batch06/pxl-fac-beauty-base-alpha-01-v02.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "979C24138B5DEEAE8BDB6B2B66B818F9FA26CA6E94B20C1C483F6841C5E5C1B5",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 22,
+    "rgba_colors": 23,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      304,
+      72,
+      1200,
+      944
+    ]
+  },
+  {
+    "path": "contact-sheets/contact-sheet-batch06-v01.png",
+    "size": [
+      1800,
+      1280
+    ],
+    "sha256": "7C1E59E802114F74ACD482EAC780B883CD12F109975DB19520542CA9D462CD3A",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 729,
+    "rgba_colors": 729,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      0,
+      0,
+      1800,
+      1280
+    ]
+  },
+  {
+    "path": "contact-sheets/contact-sheet-batch06-style-comparison-v01.png",
+    "size": [
+      1900,
+      1660
+    ],
+    "sha256": "980A13869123682553D53D7C693A2B3EDE1689706643467BF47B7B20640F24F0",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "partial_alpha_pixels": 0,
+    "opaque_colors": 131886,
+    "rgba_colors": 131886,
+    "transparent_rgb_nonzero": 0,
+    "bbox": [
+      0,
+      0,
+      1900,
+      1660
+    ]
+  }
+]

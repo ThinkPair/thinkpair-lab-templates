@@ -1,0 +1,10 @@
+{
+  "baseTheme": "dark",
+  "livePreview": false,
+  "showInlineTitle": false,
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "promptDelete": true,
+  "attachmentFolderPath": "90_系统设置_不用先看/附件"
+}

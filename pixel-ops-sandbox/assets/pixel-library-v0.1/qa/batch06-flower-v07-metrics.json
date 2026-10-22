@@ -1,0 +1,32 @@
+{
+  "input_path": "source/batch06/pxl-fac-flower-base-alpha-01-v06.png",
+  "input_sha256": "4F933EA0F4D6417823DEBDA5A7466484961E7D5DF0E9C87454F27479105CD869",
+  "path": "source/batch06/pxl-fac-flower-base-alpha-01-v07.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "sha256": "C44D0A717DC7C1478A81A619965F723014309A0BC62121F373D2EEF0524F999C",
+  "eight_by_eight_exact": true,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "opaque_colors": 29,
+  "rgba_colors": 30,
+  "transparent_rgb_nonzero": 0,
+  "bbox": [
+    320,
+    40,
+    1208,
+    984
+  ],
+  "connected_components": 1,
+  "exact_outline_pixels": 447,
+  "exact_outline_share_of_opaque": 0.037396,
+  "mean_brightness": 0.559338,
+  "web_sha256": "C6027A97CE6DED2018490772AD5917F38C7C88E4C6315B0AECAD676FA6C0C8A8",
+  "video_sha256": "C44D0A717DC7C1478A81A619965F723014309A0BC62121F373D2EEF0524F999C",
+  "contact_sheet_sha256": "710713325C111892C89619C43F28174ED50C7984DCEC7D121D9BF5E600A9662C",
+  "comparison_sheet_sha256": "4843A627999DDC5FCB3E923E2E6529B50FB31FD720F19705E9C4C959105BF7BA"
+}

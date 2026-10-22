@@ -1,0 +1,8 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "noise-lab-soft"
+  ],
+  "baseFontSize": 16
+}

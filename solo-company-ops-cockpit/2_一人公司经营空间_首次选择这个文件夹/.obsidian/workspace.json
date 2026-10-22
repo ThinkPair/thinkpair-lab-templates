@@ -1,0 +1,179 @@
+{
+    "main":  {
+                 "id":  "5324373015726ba8",
+                 "type":  "split",
+                 "children":  [
+                                  {
+                                      "id":  "4509724f8bf84da7",
+                                      "type":  "tabs",
+                                      "children":  [
+                                                       {
+                                                           "id":  "e7a7b303c61786dc",
+                                                           "type":  "leaf",
+                                                           "pinned":  true,
+                                                           "state":  {
+                                                                         "type":  "markdown",
+                                                                         "state":  {
+                                                                                       "file":  "00_开始这里/自媒体运营看板.md",
+                                                                                       "mode":  "preview",
+                                                                                       "source":  true
+                                                                                   },
+                                                                         "pinned":  true,
+                                                                         "icon":  "lucide-file",
+                                                                         "title":  "自媒体运营看板"
+                                                                     }
+                                                       }
+                                                   ],
+                                      "currentTab":  0
+                                  }
+                              ],
+                 "direction":  "vertical"
+             },
+    "left":  {
+                 "id":  "left",
+                 "type":  "split",
+                 "children":  [
+                                  {
+                                      "id":  "left-tabs",
+                                      "type":  "tabs",
+                                      "children":  [
+                                                       {
+                                                           "id":  "left-files",
+                                                           "type":  "leaf",
+                                                           "state":  {
+                                                                         "type":  "file-explorer",
+                                                                         "state":  {
+                                                                                       "sortOrder":  "alphabetical",
+                                                                                       "autoReveal":  true
+                                                                                   },
+                                                                         "icon":  "lucide-folder-closed",
+                                                                         "title":  "文件列表"
+                                                                     }
+                                                       },
+                                                       {
+                                                           "id":  "3b9a09d2d91a5252",
+                                                           "type":  "leaf",
+                                                           "state":  {
+                                                                         "type":  "search",
+                                                                         "state":  {
+                                                                                       "query":  "",
+                                                                                       "matchingCase":  false,
+                                                                                       "explainSearch":  false,
+                                                                                       "collapseAll":  false,
+                                                                                       "extraContext":  false,
+                                                                                       "sortOrder":  "alphabetical"
+                                                                                   },
+                                                                         "icon":  "lucide-search",
+                                                                         "title":  "搜索"
+                                                                     }
+                                                       }
+                                                   ]
+                                  }
+                              ],
+                 "direction":  "horizontal",
+                 "width":  280,
+                 "collapsed":  true
+             },
+    "right":  {
+                  "id":  "right",
+                  "type":  "split",
+                  "children":  [
+                                   {
+                                       "id":  "bc-ai-tabs",
+                                       "type":  "tabs",
+                                       "children":  [
+                                                        {
+                                                            "id":  "bc-ai-expert",
+                                                            "type":  "leaf",
+                                                            "state":  {
+                                                                          "type":  "claudian-view",
+                                                                          "state":  {
+
+                                                                                    },
+                                                                          "icon":  "bot",
+                                                                          "title":  "商业运营专家"
+                                                                      }
+                                                        },
+                                                        {
+                                                            "id":  "da9aed3685391871",
+                                                            "type":  "leaf",
+                                                            "state":  {
+                                                                          "type":  "backlink",
+                                                                          "state":  {
+                                                                                        "file":  "00_开始这里/自媒体运营看板.md",
+                                                                                        "collapseAll":  false,
+                                                                                        "extraContext":  false,
+                                                                                        "sortOrder":  "alphabetical",
+                                                                                        "showSearch":  false,
+                                                                                        "searchQuery":  "",
+                                                                                        "backlinkCollapsed":  false,
+                                                                                        "unlinkedCollapsed":  true
+                                                                                    },
+                                                                          "icon":  "links-coming-in",
+                                                                          "title":  "自媒体运营看板 的反向链接列表"
+                                                                      }
+                                                        },
+                                                        {
+                                                            "id":  "41eff71fcc3ee4c6",
+                                                            "type":  "leaf",
+                                                            "state":  {
+                                                                          "type":  "outgoing-link",
+                                                                          "state":  {
+                                                                                        "file":  "00_开始这里/自媒体运营看板.md",
+                                                                                        "linksCollapsed":  false,
+                                                                                        "unlinkedCollapsed":  true
+                                                                                    },
+                                                                          "icon":  "links-going-out",
+                                                                          "title":  "自媒体运营看板 的出链列表"
+                                                                      }
+                                                        },
+                                                        {
+                                                            "id":  "8afdc157a88bec22",
+                                                            "type":  "leaf",
+                                                            "state":  {
+                                                                          "type":  "all-properties",
+                                                                          "state":  {
+                                                                                        "sortOrder":  "frequency",
+                                                                                        "showSearch":  false,
+                                                                                        "searchQuery":  ""
+                                                                                    },
+                                                                          "icon":  "lucide-archive",
+                                                                          "title":  "添加笔记属性"
+                                                                      }
+                                                        },
+                                                        {
+                                                            "id":  "f2abcdd406503e72",
+                                                            "type":  "leaf",
+                                                            "state":  {
+                                                                          "type":  "outline",
+                                                                          "state":  {
+                                                                                        "file":  "00_开始这里/自媒体运营看板.md",
+                                                                                        "followCursor":  false,
+                                                                                        "showSearch":  false,
+                                                                                        "searchQuery":  ""
+                                                                                    },
+                                                                          "icon":  "lucide-list",
+                                                                          "title":  "自媒体运营看板 的大纲"
+                                                                      }
+                                                        }
+                                                    ]
+                                   }
+                               ],
+                  "direction":  "horizontal",
+                  "width":  370,
+                  "collapsed":  true
+              },
+    "left-ribbon":  {
+                        "hiddenItems":  {
+                                            "switcher:打开快速切换":  false,
+                                            "templates:插入模板":  false,
+                                            "command-palette:打开命令面板":  false,
+                                            "realclaudian:打开商业运营专家":  false,
+                                            "homepage:Open homepage":  false
+                                        }
+                    },
+    "active":  "e7a7b303c61786dc",
+    "lastOpenFiles":  [
+                          "00_开始这里/自媒体运营看板.md"
+                      ]
+}

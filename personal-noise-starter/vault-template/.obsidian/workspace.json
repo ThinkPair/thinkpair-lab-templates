@@ -1,0 +1,91 @@
+{
+  "main": {
+    "id": "main",
+    "type": "split",
+    "children": [
+      {
+        "id": "home-tabs",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "home-leaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_开始这里/首页.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-home",
+              "title": "首页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "left",
+    "type": "split",
+    "children": [
+      {
+        "id": "left-tabs",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "left-files",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件"
+            }
+          },
+          {
+            "id": "left-search",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          }
+        ],
+        "currentTab": 0
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "right",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 360,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {}
+  },
+  "active": "home-leaf",
+  "lastOpenFiles": [
+    "00_开始这里/首页.md",
+    "00_开始这里/三步开始.md",
+    "00_开始这里/AI沉淀助手怎么用.md"
+  ]
+}

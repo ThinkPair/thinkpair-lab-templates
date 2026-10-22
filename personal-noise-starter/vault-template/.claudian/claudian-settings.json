@@ -1,0 +1,140 @@
+﻿{
+    "userName":  "",
+    "permissionMode":  "normal",
+    "model":  "deepseek-v4-flash",
+    "thinkingBudget":  "default",
+    "effortLevel":  "high",
+    "serviceTier":  "default",
+    "enableAutoTitleGeneration":  false,
+    "titleGenerationModel":  "",
+    "excludedTags":  [
+
+                     ],
+    "mediaFolder":  "",
+    "systemPrompt":  "你是降噪实验室的 AI 沉淀助手。你的任务不是替用户成长，而是帮助用户把外界信息噪音整理成自己的输入、判断、复盘和行动。\n\n工作规则：\n1. 可以读取当前空间里的 Markdown，用于理解用户状态和上下文。\n2. 允许自动创建或更新这些目录里的 Markdown：10_信息噪音、20_我的状态和目标、30_输入和读书、40_判断和复盘、50_行动和结果。\n3. 禁止自动修改 .obsidian、.claudian、.claude、90_系统设置_不用先看、根目录启动文件、插件配置、脚本和运行底座。\n4. 不删除、不移动、不批量重命名文件。确需结构调整时，先向用户确认。\n5. 第一次对话优先引导用户完成噪音体检，并写入 20_我的状态和目标/我的噪音体检报告.md。\n6. 日常使用时，先读取用户在 00_先丢这里 系列页面写下的一句话，再整理成正式记录。\n7. 处理外界信息时，固定沉淀为：事实是什么、它触发了什么、它和用户目标的关系、用户自己的判断、下一步是否行动。\n8. 写入正式记录时，优先沿用对应模板，并补充 record_type、source、created、flow 等字段，方便首页和噪音变化趋势汇总。\n9. 噪音记录的 flow 只能使用这些去向之一：只是噪音、转输入、转判断复盘、转行动结果。\n10. 不鼓励冲动消费，不把热点当机会，不把别人的结论直接变成用户计划。\n11. 面向用户时统一自称 AI 沉淀助手。除非用户主动询问技术配置，否则不讲底层插件、运行框架或开发者理论。",
+    "persistentExternalContextPaths":  [
+
+                                       ],
+    "sharedEnvironmentVariables":  "",
+    "envSnippets":  [
+
+                    ],
+    "customContextLimits":  {
+
+                            },
+    "customModelAliases":  {
+
+                           },
+    "keyboardNavigation":  {
+                               "scrollUpKey":  "w",
+                               "scrollDownKey":  "s",
+                               "focusInputKey":  "i"
+                           },
+    "requireCommandOrControlEnterToSend":  false,
+    "locale":  "zh-CN",
+    "providerConfigs":  {
+                            "claude":  {
+                                           "safeMode":  "acceptEdits",
+                                           "cliPath":  "claude.cmd",
+                                           "cliPathsByHost":  {
+
+                                                              },
+                                           "loadUserSettings":  false,
+                                           "enableChrome":  false,
+                                           "enableBangBash":  false,
+                                           "enableOpus1M":  false,
+                                           "enableSonnet1M":  false,
+                                           "customModels":  "deepseek-v4-pro[1m]\ndeepseek-v4-flash",
+                                           "lastModel":  "deepseek-v4-flash",
+                                           "environmentVariables":  "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_AUTH_TOKEN=PASTE_YOUR_DEEPSEEK_API_KEY_HERE\nANTHROPIC_API_KEY=PASTE_YOUR_DEEPSEEK_API_KEY_HERE\nANTHROPIC_MODEL=deepseek-v4-flash\nANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro[1m]\nANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro[1m]\nANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash\nCLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash\nCLAUDE_CODE_EFFORT_LEVEL=max\nPATH=.;..\\_NoiseLab_Internal\\claude-code\\node_modules\\@anthropic-ai\\claude-code\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\System32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0",
+                                           "environmentHash":  "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash|ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro[1m]|ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro[1m]|ANTHROPIC_MODEL=deepseek-v4-flash"
+                                       },
+                            "codex":  {
+                                          "enabled":  false,
+                                          "safeMode":  "workspace-write",
+                                          "cliPath":  "",
+                                          "cliPathsByHost":  {
+
+                                                             },
+                                          "customModels":  "",
+                                          "reasoningSummary":  "detailed",
+                                          "environmentVariables":  "",
+                                          "environmentHash":  "",
+                                          "installationMethodsByHost":  {
+
+                                                                        },
+                                          "wslDistroOverridesByHost":  {
+
+                                                                       }
+                                      },
+                            "opencode":  {
+                                             "cliPath":  "",
+                                             "cliPathsByHost":  {
+
+                                                                },
+                                             "enabled":  false,
+                                             "environmentHash":  "",
+                                             "environmentVariables":  "",
+                                             "modelAliases":  {
+
+                                                              },
+                                             "preferredThinkingByModel":  {
+
+                                                                          },
+                                             "selectedMode":  "claudian-safe",
+                                             "thinkingOptionsByModel":  {
+
+                                                                        },
+                                             "visibleModels":  [
+
+                                                               ]
+                                         },
+                            "pi":  {
+                                       "cliPath":  "",
+                                       "cliPathsByHost":  {
+
+                                                          },
+                                       "discoveredModels":  [
+
+                                                            ],
+                                       "enabled":  false,
+                                       "environmentHash":  "",
+                                       "environmentVariables":  "",
+                                       "modelAliases":  {
+
+                                                        },
+                                       "preferredThinkingByModel":  {
+
+                                                                    },
+                                       "toolMode":  "all",
+                                       "visibleModels":  [
+
+                                                         ]
+                                   }
+                        },
+    "settingsProvider":  "claude",
+    "savedProviderModel":  {
+                               "claude":  "deepseek-v4-flash"
+                           },
+    "savedProviderEffort":  {
+                                "claude":  "high"
+                            },
+    "savedProviderServiceTier":  {
+
+                                 },
+    "savedProviderThinkingBudget":  {
+
+                                    },
+    "savedProviderPermissionMode":  {
+                                        "claude":  "normal"
+                                    },
+    "lastCustomModel":  "deepseek-v4-flash",
+    "maxTabs":  3,
+    "tabBarPosition":  "input",
+    "enableAutoScroll":  true,
+    "deferMathRenderingDuringStreaming":  true,
+    "chatViewPlacement":  "right-sidebar",
+    "hiddenProviderCommands":  {
+
+                               }
+}

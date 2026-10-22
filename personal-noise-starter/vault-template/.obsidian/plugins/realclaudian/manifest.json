@@ -1,0 +1,10 @@
+{
+  "id": "realclaudian",
+  "name": "AI 沉淀助手",
+  "version": "2.0.21",
+  "minAppVersion": "1.7.2",
+  "description": "把当前空间作为工作目录，帮助用户沉淀信息、判断、复盘和行动。",
+  "author": "Yishen Tu",
+  "authorUrl": "https://github.com/YishenTu",
+  "isDesktopOnly": true
+}

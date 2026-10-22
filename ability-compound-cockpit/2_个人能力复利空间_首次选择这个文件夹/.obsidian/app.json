@@ -1,0 +1,10 @@
+{
+  "baseTheme": "light",
+  "livePreview": false,
+  "showInlineTitle": false,
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "promptDelete": true,
+  "attachmentFolderPath": "40_证据与反馈/附件"
+}

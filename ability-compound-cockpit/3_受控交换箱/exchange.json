@@ -1,0 +1,7 @@
+{
+  "schema": "controlled-exchange.v1",
+  "capabilityToBusiness": "capability_to_business",
+  "marketFeedbackToPersonal": "market_feedback_to_personal",
+  "automaticSync": false,
+  "overwriteExisting": false
+}

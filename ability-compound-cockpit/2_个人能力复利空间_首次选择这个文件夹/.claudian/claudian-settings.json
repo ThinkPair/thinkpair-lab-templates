@@ -1,0 +1,140 @@
+{
+    "userName":  "",
+    "permissionMode":  "acceptEdits",
+    "model":  "deepseek-v4-pro[1m]",
+    "thinkingBudget":  "default",
+    "effortLevel":  "high",
+    "serviceTier":  "default",
+    "enableAutoTitleGeneration":  false,
+    "titleGenerationModel":  "",
+    "excludedTags":  [
+
+                     ],
+    "mediaFolder":  "",
+    "systemPrompt":  "你是个人能力复利驾驶舱中的能力教练。每个新会话先读取 .claude/hooks/ability-write-usage.md，再读取 80_AI能力教练/AI接手索引.md，并按最小必要范围读取当前主技能、固定六维及本命令需要的 confirmed 记录。用户调用七个命令或明确要求建立、记录、保存、复盘、导入，即授权本轮普通写回；每轮只问 1—3 个会改变结果的问题。所有正式记录只允许走 ability-write.v1 队列：用 Write 新建 .claude/write-queue/ 下的批次清单，完整列出 create/update、白名单相对路径、完整目标 Markdown 和哈希；禁止直接 Edit/Write 正式文件。随后只运行 ability-write-usage.md 给出的固定 powershell.exe 命令，对清单先执行 ability-write.ps1 -Mode Inspect。Inspect 返回 routine 时立即对同一清单 -Mode Apply，不再询问是否保存；返回 confirmation_required 时只展示变化、依据、影响、是否出库/可撤销及返回的 preview_id、payload_hash，用户自然语言确认一次后再 Apply；返回 blocked 时修正事实或清单，绝不绕过。内容或路径变化必须重新 Inspect。Apply 后复读正式记录和脱敏结果摘要并汇报。普通工作包括首次建立主技能与六维、创建/关闭练习、添加证据、记录结果与下一调整、保存无等级变化的复盘、移交草稿和合法反馈草稿。高影响包括替换 active 主技能、改变 evidence_state/ability_version、使旧证据或结论失效、降低隐私、反馈进入正式复盘、归档 confirmed、一次修改至少 10 条 confirmed、正式卡或导出。同一任务使用独立清单先 Inspect/Apply 安全部分，高影响字段保持原值并后置 Inspect/确认；证据不足时只拒绝等级变化，仍保存真实复盘、证据、差距和下一练习。练习次数不等于升级，自评不等于外部验证；只统计 confirmed。永久拒绝伪造事实、无证据升级、患者/客户身份和财务隐私、直接跨空间写入、绕过交换校验、删除/移动/重命名、修改规则/首页/CSS/插件/系统目录。除写队列清单及 ability-write-usage.md 明列的固定 Inspect/Apply 命令外，不得修改 .claude 或运行其他 Shell。能力移交只描述待验证候选，不得生成真实客户、项目、报价、价格、回款或收入；市场反馈默认脱敏且不能直接改等级。面向用户自称能力教练，使用中文和非技术表达。",
+    "persistentExternalContextPaths":  [
+
+                                       ],
+    "sharedEnvironmentVariables":  "",
+    "envSnippets":  [
+
+                    ],
+    "customContextLimits":  {
+
+                            },
+    "customModelAliases":  {
+
+                           },
+    "keyboardNavigation":  {
+                               "scrollUpKey":  "w",
+                               "scrollDownKey":  "s",
+                               "focusInputKey":  "i"
+                           },
+    "requireCommandOrControlEnterToSend":  false,
+    "locale":  "zh-CN",
+    "providerConfigs":  {
+                            "claude":  {
+                                           "safeMode":  "acceptEdits",
+                                           "cliPath":  "",
+                                           "cliPathsByHost":  {
+
+                                                              },
+                                           "loadUserSettings":  false,
+                                           "enableChrome":  false,
+                                           "enableBangBash":  false,
+                                           "enableOpus1M":  false,
+                                           "enableSonnet1M":  false,
+                                           "customModels":  "deepseek-v4-pro[1m]\ndeepseek-v4-flash",
+                                           "lastModel":  "deepseek-v4-flash",
+                                           "environmentVariables":  "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=deepseek-v4-flash\nANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro[1m]\nANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro[1m]\nANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash\nANTHROPIC_AUTH_TOKEN=PASTE_YOUR_DEEPSEEK_API_KEY_HERE\nANTHROPIC_API_KEY=PASTE_YOUR_DEEPSEEK_API_KEY_HERE",
+                                           "environmentHash":  "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash|ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro[1m]|ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro[1m]|ANTHROPIC_MODEL=deepseek-v4-flash"
+                                       },
+                            "codex":  {
+                                          "enabled":  false,
+                                          "safeMode":  "workspace-write",
+                                          "cliPath":  "",
+                                          "cliPathsByHost":  {
+
+                                                             },
+                                          "customModels":  "",
+                                          "reasoningSummary":  "detailed",
+                                          "environmentVariables":  "",
+                                          "environmentHash":  "",
+                                          "installationMethodsByHost":  {
+
+                                                                        },
+                                          "wslDistroOverridesByHost":  {
+
+                                                                       }
+                                      },
+                            "opencode":  {
+                                             "cliPath":  "",
+                                             "cliPathsByHost":  {
+
+                                                                },
+                                             "enabled":  false,
+                                             "environmentHash":  "",
+                                             "environmentVariables":  "",
+                                             "modelAliases":  {
+
+                                                              },
+                                             "preferredThinkingByModel":  {
+
+                                                                          },
+                                             "selectedMode":  "claudian-safe",
+                                             "thinkingOptionsByModel":  {
+
+                                                                        },
+                                             "visibleModels":  [
+
+                                                               ]
+                                         },
+                            "pi":  {
+                                       "cliPath":  "",
+                                       "cliPathsByHost":  {
+
+                                                          },
+                                       "discoveredModels":  [
+
+                                                            ],
+                                       "enabled":  false,
+                                       "environmentHash":  "",
+                                       "environmentVariables":  "",
+                                       "modelAliases":  {
+
+                                                        },
+                                       "preferredThinkingByModel":  {
+
+                                                                    },
+                                       "toolMode":  "all",
+                                       "visibleModels":  [
+
+                                                         ]
+                                   }
+                        },
+    "settingsProvider":  "claude",
+    "savedProviderModel":  {
+                               "claude":  "deepseek-v4-pro[1m]"
+                           },
+    "savedProviderEffort":  {
+                                "claude":  "high"
+                            },
+    "savedProviderServiceTier":  {
+
+                                 },
+    "savedProviderThinkingBudget":  {
+
+                                    },
+    "savedProviderPermissionMode":  {
+                                        "claude":  "acceptEdits"
+                                    },
+    "lastCustomModel":  "deepseek-v4-pro[1m]",
+    "maxTabs":  5,
+    "tabBarPosition":  "input",
+    "enableAutoScroll":  true,
+    "deferMathRenderingDuringStreaming":  true,
+    "chatViewPlacement":  "right-sidebar",
+    "hiddenProviderCommands":  {
+
+                               }
+}
